@@ -8,8 +8,8 @@ const NavBar = () => {
                 <li>Products</li>
                 <li>WishLists</li>
                 <li>Cart</li>
-                <li><button className="authButtons">Sign Up</button></li>
-                <li><button className='authButtons'>Sign In</button></li>
+                <li><button className="authButtons">Register</button></li>
+                <li><button className='authButtons'>Login</button></li>
             </ul>
         </nav>
         </>
