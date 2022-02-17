@@ -18,6 +18,41 @@ $md-heading: 1em;
 	align-items: center;
 }
 
+.display-f-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonDeco {
+	padding: 7px;
+	border-radius: 10px;
+	background-color: $bg2;
+	color: $text-color1;
+	.buttonDeco:hover {
+		background-color: $bg;
+		border-color: $bg2;
+		color: $text-color2;
+	}
+}
+
+.secondary-btn {
+	padding: 7px;
+	border-radius: 10px;
+	background-color: $bg;
+	border-color: $bg2;
+	color: $text-color2;
+}
+.secondary-btn:hover {
+	background-color: $bg2;
+	color: $text-color1;
+}
+.secondary-btn:active {
+	background-color: $bg2;
+	color: $bg;
+}
+
 .display-f-row {
 	display: flex;
 	justify-content: space-around;
@@ -35,4 +70,11 @@ $xl: 75em;
 			@content;
 		}
 	}
+}
+
+.grid {
+	display: grid;
+	gap: 4rem;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-auto-rows: 240px;
 }
